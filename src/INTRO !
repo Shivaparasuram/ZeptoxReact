@@ -1,0 +1,13 @@
+
+ ZEPTO --
+ ├── components/
+ │     ├── Header.jsx
+ │     ├── Banner.jsx
+ │     ├── Body.jsx
+ │     └── Footer.jsx
+ │
+ └── pages/
+       └── MainPage.jsx
+
+connect component 4 file to main page
+connect main page to app js
