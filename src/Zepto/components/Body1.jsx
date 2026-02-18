@@ -1,6 +1,6 @@
-const Body=(props)=>
+const Body1=(props)=>
     {
-            const {title,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10} =props.men1
+            const {title,img1,img2,img3,img4,img5} =props.women1
 
     return(
         <div className="body">
@@ -11,14 +11,9 @@ const Body=(props)=>
                 <img src={img3}/>
                 <img src={img4}/>
                 <img src={img5}/>
-                <img src={img6}/>
-                <img src={img7}/>
-                <img src={img8}/>
-                <img src={img9}/>
-                <img src={img10}/>
             </div>
         </div>
         )
     }
 
-export default Body;
+export default Body1;

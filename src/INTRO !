@@ -11,3 +11,7 @@
 
 connect component 4 file to main page
 connect main page to app js
+
+
+
+Products.js -- MainPage -- body.jsx

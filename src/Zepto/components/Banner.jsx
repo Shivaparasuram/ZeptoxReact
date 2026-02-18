@@ -1,6 +1,10 @@
-const Banner=()=>{
-    return (
-        <div>Banner</div>
-        )
-    }
+const Banner = () => {
+  return (
+    <div className="banner">
+      <img src="Banner/HP_3.jpeg" />
+
+    </div>
+  );
+};
+
 export default Banner;
