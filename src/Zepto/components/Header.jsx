@@ -1,46 +1,44 @@
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <header className="head">
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
-          rel="stylesheet"
-        />
 
-
-      {/* Left Logo Section */}
+      {/* Logo Section */}
       <div className="left">
         <img
           src="https://tinyurl.com/2r8am4pz"
           alt="Logo"
-          height="100px"
-          width="100px"
+          className="logo"
         />
       </div>
 
-      {/* Center Navigation Section */}
-      <div className="center">
+      {/* Navigation Links */}
+      <nav className="center">
         <ul className="nav-links">
-          <li>Mens !x</li>
-          <li>Womens !x</li>
-          <li>Kids !x</li>
-          <li>Rocker"s !x</li>
+          <li><Link to="/men">Men !x</Link></li>
+          <li><Link to="/women">Women !x</Link></li>
+          <li><Link to="/kids">Kids !x</Link></li>
+          <li><Link to="/rockers">Rockers !x</Link></li>
         </ul>
-      </div>
+      </nav>
 
-
-      {/* Search Section */}
+      {/* Search Box */}
       <div className="search-box">
         <input
+          type="text"
           className="search"
-          placeholder="What are you looking for CAMP !"
+          placeholder="Search products..."
         />
         <button className="btn">Search</button>
       </div>
 
-      {/* Right Button Section */}
+      {/* Right Side Buttons */}
       <div className="right">
-        <div className="signup-text">Sign/up</div>
-        <button className="btn1">Add !</button>
+        <Link to="/signup" className="signup-text">
+          Sign Up
+        </Link>
+        <button className="btn1">Cart</button>
       </div>
 
     </header>
