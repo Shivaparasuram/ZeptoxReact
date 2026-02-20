@@ -1,19 +1,35 @@
-const Body1=(props)=>
-    {
-            const {title,img1,img2,img3,img4,img5} =props.women1
+import { Link } from 'react-router-dom';
 
-    return(
-        <div className="body">
-            <h3>{title}</h3>
-            <div className="images">
-                <img src={img1}/>
-                <img src={img2}/>
-                <img src={img3}/>
-                <img src={img4}/>
-                <img src={img5}/>
+/**
+ * Body1 Component
+ * Displays women's products in a grid layout
+ * Uses React Router Link for navigation
+ * Follows BEM naming convention
+ */
+const Body1 = (props) => {
+    const { title, img1, img2, img3, img4, img5 } = props.women1;
+
+    const productImages = [img1, img2, img3, img4, img5];
+
+    return (
+        <section className="content">
+            <h3 className="content__title">{title}</h3>
+            <div className="product-grid">
+                {productImages.map((imgSrc, index) => (
+                    <Link
+                        to={`/women/product/${index + 1}`}
+                        key={index}
+                        className="product-grid__item"
+                    >
+                        <img
+                            src={imgSrc}
+                            alt={`Women's Product ${index + 1}`}
+                        />
+                    </Link>
+                ))}
             </div>
-        </div>
-        )
-    }
+        </section>
+    );
+};
 
 export default Body1;
